@@ -1,0 +1,18 @@
+[project]
+name = "renewal-report-generator"
+version = "1.1.0"
+description = "카카오톡 기반 데일리 운영 리포트에서 구독 연장 리포트를 자동 생성하는 도구"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.0",
+    "openpyxl>=3.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+]
+
+[project.scripts]
+renewal-report = "src.main:main"
